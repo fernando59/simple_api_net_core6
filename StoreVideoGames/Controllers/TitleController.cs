@@ -23,12 +23,12 @@ namespace StoreVideoGames.Controllers
         [HttpGet]
         public async Task<ActionResult> GetTitles()
         {
-            var titles = await _titleManager.GetAsync();
-            return Ok(titles);
+            ManagerResult<Title> managerResult = await _titleManager.GetAsync();
+            managerResult.Message = "Get data Successfully";
+            return Ok(managerResult);
         }
 
         [HttpPost]
-
         public async Task<IActionResult> CreateTitle(CreateTitleDTO createTitleDTO)
         {
             ManagerResult<Title> managerResult = await _titleManager.AddAsync(createTitleDTO);
@@ -42,7 +42,6 @@ namespace StoreVideoGames.Controllers
         }
 
         [HttpPut("{id}")]
-        //[Authorize(Roles = UserRols.Admin)]
         public async Task<IActionResult> UpdateTitle(int id, CreateTitleDTO createTitleDTO)
         {
             ManagerResult<Title> managerResult = await _titleManager.UpdateAsync(id, createTitleDTO);
@@ -59,14 +58,13 @@ namespace StoreVideoGames.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBrand(int id)
         {
-            //var brand = await _context.BrandVehicle.Where(t => t.Id == id).FirstOrDefaultAsync();
-
-            //if (brand == null) return NotFound(new { Ok = false, Message = "Brand not found" });
-
-            //_context.BrandVehicle.Remove(brand);
-            //await _context.SaveChangesAsync();
-            return Ok(new { success = true, message = "Delete successfully" });
-
+            ManagerResult<Title> managerResult = await _titleManager.DeleteAsync(id);
+            if (!managerResult.Success)
+            {
+                return BadRequest(managerResult);
+            }
+            managerResult.Message = "Delete Successfully";
+            return Ok(managerResult);
         }
     }
 }

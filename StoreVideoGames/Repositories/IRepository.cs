@@ -9,5 +9,6 @@ namespace StoreVideoGames.Repositories
         Task AddAsync(TEntity entity);
         Task UpdateAsync(TEntity entity);
         Task DeleteAsync(TEntity entity);
+        Task<TEntity> GetByIdAsync(int id);
     }
 }

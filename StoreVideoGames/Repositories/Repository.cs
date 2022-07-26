@@ -33,9 +33,14 @@ namespace StoreVideoGames.Repositories
             return await _dbSet.ToListAsync();
         }
 
+        public async Task<TEntity> GetByIdAsync(int id)
+        {
+            return await _dbSet.FindAsync(id);
+        }
+
         public async Task UpdateAsync(TEntity entity)
         {
-            _context.Update(entity);
+            _context.Entry(entity).State = EntityState.Modified;
             await _context.SaveChangesAsync();
         }
     }
