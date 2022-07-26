@@ -1,5 +1,6 @@
 using EFDataAccess;
 using Microsoft.EntityFrameworkCore;
+using StoreVideoGames.DependecyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(option =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+
+// Registers the repositories
+builder.Services.AddRepositories();
+builder.Services.AddAutoMapper(typeof(Program));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

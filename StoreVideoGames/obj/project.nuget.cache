@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "YXv27Wvszkg6dVffMPvk+i1Vt2fGoictQqDdzAFSzBF9TlJk4Bkef974tT4NQgDuDEyQzZrGojkCh9xBpsyWtg==",
+  "dgSpecHash": "3SjVnqSrpK4iT8Yz4efd81FwxSWKBweMEUxRTRrC50kjgW4CusS6d7nKBdAWjjqhvzoxURtYUGixyDrXvdxHrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fernando Mercado\\source\\repos\\StoreVideoGames\\StoreVideoGames\\StoreVideoGames.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Fernando Mercado\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\Fernando Mercado\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Fernando Mercado\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\Fernando Mercado\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Fernando Mercado\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Fernando Mercado\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Fernando Mercado\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Fernando Mercado\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",

@@ -61,3 +61,5 @@ C:\Users\Fernando Mercado\source\repos\StoreVideoGames\StoreVideoGames\obj\Debug
 C:\Users\Fernando Mercado\source\repos\StoreVideoGames\StoreVideoGames\obj\Debug\net6.0\ref\StoreVideoGames.dll
 C:\Users\Fernando Mercado\source\repos\StoreVideoGames\StoreVideoGames\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Fernando Mercado\source\repos\StoreVideoGames\StoreVideoGames\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Fernando Mercado\source\repos\StoreVideoGames\StoreVideoGames\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Fernando Mercado\source\repos\StoreVideoGames\StoreVideoGames\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
